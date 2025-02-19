@@ -71,7 +71,7 @@
         android:background="@drawable/round_button"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="40dp"
         />
 
 </LinearLayout>
