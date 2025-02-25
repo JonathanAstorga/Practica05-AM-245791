@@ -7,7 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class ProductosActivity : AppCompatActivity() {
-    var menu: ArrayList<Product> = ArrayList<Product>
+    var menu: ArrayList<Product> = ArrayList<Product>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,7 +57,7 @@ class ProductosActivity : AppCompatActivity() {
         menu.add(Product("Platillos de Camarón a la Diabla", R.drawable.botanacamarones, "", 18.99))
 
         //combos
-        
+
     }
 
 
