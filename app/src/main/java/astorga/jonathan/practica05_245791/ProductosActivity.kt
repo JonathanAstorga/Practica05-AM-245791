@@ -18,6 +18,7 @@ import androidx.core.view.WindowInsetsCompat
 class ProductosActivity : AppCompatActivity() {
     var menu: ArrayList<Product> = ArrayList<Product>()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -35,8 +36,10 @@ class ProductosActivity : AppCompatActivity() {
     }
 
     fun  agregarProductos(option: String?){
+        var img: ImageView = findViewById(R.id.imgView1) as ImageView
         when(option){
             "ANTOJITOS"-> {
+                img.setImageResource(R.drawable.antojitos)
                 menu.add(
                     Product(
                         "Quesadillas",
@@ -98,6 +101,7 @@ class ProductosActivity : AppCompatActivity() {
                 menu.add(Product("Coctel de Camarón", R.drawable.coctel, "Shrimp cocktail", 16.49))
             }
                     "ESPECIALIDADES"-> {
+                        img.setImageResource(R.drawable.especialidades)
                         menu.add(
                             Product(
                                 "Mojarra Frita - Fried Fish",
@@ -178,6 +182,7 @@ class ProductosActivity : AppCompatActivity() {
                         )
                     }
                     "COMBOS"-> {
+                        img.setImageResource(R.drawable.combinations)
                         menu.add(
                             Product(
                                 "Traditional Taco Combo", R.drawable.combinationtaco,
@@ -236,6 +241,7 @@ class ProductosActivity : AppCompatActivity() {
                         )
                     }
                     "TORTAS"-> {
+                        img.setImageResource(R.drawable.tortas)
                         menu.add(
                             Product(
                                 "Torta Regular", R.drawable.torta,
@@ -273,6 +279,7 @@ class ProductosActivity : AppCompatActivity() {
                         )
                     }
                     "SOPAS"-> {
+                        img.setImageResource(R.drawable.sopas)
                         menu.add(Product("Pozole", R.drawable.pozole, "Weekends only", 5.99))
                         menu.add(Product("Menudo", R.drawable.menudo, "Wednesday to Sunday", 5.99))
                         menu.add(Product("Caldo de Res", R.drawable.caldores, "", 5.99))
@@ -294,6 +301,7 @@ class ProductosActivity : AppCompatActivity() {
                         )
                     }
                     "BEBIDAS"-> {
+                        img.setImageResource(R.drawable.drinks)
                         menu.add(Product("Soft Drinks - Sodas.", R.drawable.sodas, "20oz", 2.99))
                         menu.add(Product("Jarritos", R.drawable.jarritos, "", 2.75))
                         menu.add(Product("Aguas Frescas", R.drawable.caguamamichelada, "", 2.99))

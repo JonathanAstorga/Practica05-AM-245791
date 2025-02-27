@@ -3,6 +3,7 @@ package astorga.jonathan.practica05_245791
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -32,6 +33,7 @@ class MenuActivity : AppCompatActivity() {
         }
 
         btnTortas.setOnClickListener{
+
             var intent : Intent = Intent(this, ProductosActivity::class.java)
             intent.putExtra("menuType", "TORTAS")
             startActivity(intent)
